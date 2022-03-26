@@ -1,0 +1,32 @@
+<h2>Book your Appointment</h2>
+<form novalidate [formGroup]="bookAppointment" (ngSubmit)="displaySelectedInfo()">
+   
+        <div class="form-group">
+            <table>
+         <tr>
+           <td><label>Docotr Name</label></td>
+            <td><input type="dropbox" class="form-control" formcontrolname="specialty"></td>
+        </tr>
+        <tr>
+           <td><label>Reason for visit</label></td>
+          <td><input type="dropbox" class="form-control" formcontrolname="reason"></td>
+          </tr> 
+            <tr>
+           <td><label>Location</label></td>
+           <td><input type="dropbox" class="form-control" formcontrolname="specialty"></td>
+           </tr>
+           <tr>
+            <td><label>Insurance Provider</label></td>
+            <td> <input type="dropbox" class="form-control" formcontrolname="specialty"></td>
+            </tr>
+            <tr>
+            <td> <label>Time</label>
+             <td><input type="dropbox" class="form-control" formcontrolname="specialty"></td>
+           </tr>
+            <br/>
+            </table>
+        </div>
+    
+    <div><input type="submit"></div>
+
+

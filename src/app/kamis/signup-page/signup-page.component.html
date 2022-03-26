@@ -1,0 +1,25 @@
+
+<h3>Sign Up For an Account</h3>
+<form novalidate [formGroup]="signUp" (ngSubmit)="displayUserInfo()"
+	 target = "_new" method ="get">
+	<table cellspacing="10" cellpadding="10">
+		<tr>
+			<td><label>User Name</label></td>
+			<td><input type="text" name="userName" id="userName">
+		</tr>
+		<tr>
+			<td><label>Password</label></td>
+			<td><input type="password"  id ="password" name="password" >
+			
+		</tr>
+		<tr>
+			<td><label>Confirm Password</label></td>
+			<td> <input type ="password" name= "confirmPassword" id ="confirmPassword" rows = "5" cols = "50">
+		
+		</tr>
+		<tr>
+			<td><input type="submit" value="Submit" onclick="validate"></td>
+			<td><input type="reset" value="Clear"></td>
+		</tr>
+	</table>
+</form>

@@ -1,0 +1,15 @@
+<h1>Login</h1>
+<form #userForm="ngForm" (ngSubmit)="displayUserDetails(userForm.value)">
+    <div class="form-group">
+        <label>
+            User Name
+        </label>
+        <input type="text" class="form-control" name="userId" [(ngModel)]="userName">
+        <label>
+            Password
+        </label>
+        <input type="password" class="form-control" name="userName" [(ngModel)]="userPassword">
+
+        <input type="submit">
+    </div>
+</form>
