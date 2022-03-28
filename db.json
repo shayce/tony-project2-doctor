@@ -1,0 +1,25 @@
+{
+  "signupUsers": [
+    {
+      "fullname": "Rick Sanchez",
+      "email": "rickityrick@rm.com",
+      "password": "asdfasdf",
+      "mobile": 9192824332,
+      "id": 1
+    },
+    {
+      "fullname": "Devin Booker",
+      "email": "dbook@suns.com",
+      "password": "asdfasdf",
+      "mobile": 2341236789,
+      "id": 2
+    },
+    {
+      "fullname": "Jerry Smith",
+      "email": "jersmith@rm.com",
+      "password": "asdfasdf",
+      "mobile": 2334432344,
+      "id": 3
+    }
+  ]
+}

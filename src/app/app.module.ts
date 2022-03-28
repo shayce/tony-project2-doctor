@@ -7,12 +7,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { KamisComponent } from './kamis/kamis.component';
 import { PatientInfoComponent } from './kamis/patient-info/patient-info.component';
 import { DoctorHomeComponent } from './kamis/doctor-home/doctor-home.component';
-import { LoginPageComponent } from './kamis/login-page/login-page.component';
+
 import { DoctorInfoComponent } from './kamis/doctor-info/doctor-info.component';
-import { SignupPageComponent } from './kamis/signup-page/signup-page.component';
+
 import { AppendingAppointmentsComponent } from './kamis/appending-appointments/appending-appointments.component';
 import { BookAppointmentComponent } from './kamis/book-appointment/book-appointment.component';
 import {MatSelectModule} from '@angular/material/select';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { DoctorComponent } from './model/doctor/doctor.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ModelsComponent } from './models/models.component';
 
 
 
@@ -24,11 +29,16 @@ import {MatSelectModule} from '@angular/material/select';
     KamisComponent,
     PatientInfoComponent,
     DoctorHomeComponent,
-    LoginPageComponent,
+
     DoctorInfoComponent,
-    SignupPageComponent,
+
     AppendingAppointmentsComponent,
-    BookAppointmentComponent
+    BookAppointmentComponent,
+    LoginComponent,
+    SignupComponent,
+    DoctorComponent,
+    DashboardComponent,
+    ModelsComponent
   ],
   imports: [
     BrowserModule,

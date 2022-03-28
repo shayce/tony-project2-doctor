@@ -5,22 +5,24 @@ import { BookAppointmentComponent } from './kamis/book-appointment/book-appointm
 import { DoctorHomeComponent } from './kamis/doctor-home/doctor-home.component';
 import { DoctorInfoComponent } from './kamis/doctor-info/doctor-info.component';
 import { KamisComponent } from './kamis/kamis.component';
-import { LoginPageComponent } from './kamis/login-page/login-page.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 import { PatientInfoComponent } from './kamis/patient-info/patient-info.component';
-import { SignupPageComponent } from './kamis/signup-page/signup-page.component';
+
 
 
 const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'patientInfo', component : PatientInfoComponent},
   { path: 'doctorInfo', component : DoctorInfoComponent},
   { path: 'viewAppendingApp', component : AppendingAppointmentsComponent },
-  { path: 'login', component : LoginPageComponent},
-  { path: 'signUp', component : SignupPageComponent},
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'dashboard', component: DashboardComponent }
   { path: 'bookAppointment', component : BookAppointmentComponent},
   { path: 'findDoctor', component : KamisComponent},
   { path: 'doctorHome', component : DoctorHomeComponent}
-
-
 ];
 
 @NgModule({
