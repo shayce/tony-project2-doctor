@@ -12,6 +12,8 @@ import { DoctorInfoComponent } from './kamis/doctor-info/doctor-info.component';
 import { SignupPageComponent } from './kamis/signup-page/signup-page.component';
 import { AppendingAppointmentsComponent } from './kamis/appending-appointments/appending-appointments.component';
 import { BookAppointmentComponent } from './kamis/book-appointment/book-appointment.component';
+import {MatSelectModule} from '@angular/material/select';
+
 
 
 
@@ -34,6 +36,7 @@ import { BookAppointmentComponent } from './kamis/book-appointment/book-appointm
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    MatSelectModule
 
 
   ],

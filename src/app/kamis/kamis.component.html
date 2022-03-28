@@ -1,26 +1,20 @@
 
 <h2>Find a Docotor</h2>
-<form novalidate [formGroup]="finddoctor" (ngSubmit)="displaySelectedInfo()">
-    <fieldset >
-    
-        <div class="form-group">
-            <table>
-     
-           <td><label>Specialty</label></td>
-            <td><input type="dropbox" class="form-control" formcontrolname="specialty"></td>
-       
-           <td><label>Location</label></td>
-          <td><input type="dropbox" class="form-control" formcontrolname="reason"></td>
-       
-           <td><label>Insurance</label></td>
-           <td><input type="dropbox" class="form-control" formcontrolname="specialty"></td>
-        
-            <br/>
-            </table>
-        </div>
-        </fieldset>
-    <div><input type="submit"></div>
 
+<div style="margin: 5%;">
+    <mat-form-field appearance="fill">
+      <mat-label>Countries</mat-label>
+      <mat-select (selectionChange)="onChange($event)" >
+        <mat-option *ngFor="let country of countriesList" [value]="country">{{country}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+
+
+
+
+  
 
 
 
