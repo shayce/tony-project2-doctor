@@ -9,6 +9,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { PatientInfoComponent } from './kamis/patient-info/patient-info.component';
+import { HomeComponent } from './home/home.component';
+import { AppointmenListComponent } from './appointmen-list/appointmen-list.component';
 
 
 
@@ -19,10 +21,12 @@ const routes: Routes = [
   { path: 'viewAppendingApp', component : AppendingAppointmentsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'dashboard', component: DashboardComponent }
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'bookAppointment', component : BookAppointmentComponent},
   { path: 'findDoctor', component : KamisComponent},
-  { path: 'doctorHome', component : DoctorHomeComponent}
+  { path: 'doctorHome', component : DoctorHomeComponent},
+  { path: '', component : HomeComponent},
+  { path: 'appointment-list', component : AppointmenListComponent}
 ];
 
 @NgModule({
